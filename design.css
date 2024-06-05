@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Caveat+Brush&family=Dosis:wght@200..800&family=Jost:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oxygen:wght@300;400;700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Dosis:wght@200..800&family=Jost:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oxygen:wght@300;400;700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #fffaf4;
+}
+
+nav, #home {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-family: "Cabin", sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0; /* You can adjust this value as needed */
+}
+
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.carousel-item img {
+    border-radius: 10px;
+}
+
+.title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-family: "Caveat Brush", cursive;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.nav-link.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    font-size: 0.6rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+.category img {
+    width: 25px; /* Adjusted width */
+    height: auto;
+    margin-bottom: 5px; /* Space between the image and the text */
+}
+
+.categories {
+    background-color: rgb(247, 216, 252);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#products-container {
+    max-width: 900px;
+    margin: 0 auto; 
+    border-radius: 10px;
+    padding: 20px; 
+}
+
+.HotCoffee {
+    background-color: #503C3C;
+    border-radius: 10px;
+    padding: 10px; 
+    margin: 10px;
+    color: #fff;
+}
+
+.HotCoffee ul li{
+    font-size: 0.7rem;
+    font-family: "Cabin", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.name{
+    font-size: 1rem;
+    margin-left: 20px;
+    font-family: "Dosis", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.p-image{
+    max-width: 150px;
+    height: auto;
+}
+
+
+.control{
+    background-color: transparent;
+}
+
+.sizes{
+    text-align: left;
+    list-style: none;
+    font-size: 2rem;
+}
+
+.btn {
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 2rem;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.icedCoffeeImg{
+    width: 150px;
+    height: auto;
+}
+
+.icedCoffeeName{
+    font-size: 1rem;
+    font-family: "Dosis", sans-serif;
+    text-transform: uppercase;
+}
+
+.icedCoffeeColumn{
+    background-color: #f1d5f5;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    font-size: 0.8rem;
+}
+
+.MilkTea {
+    background-color: #503C3C;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.MilkTea ul li{
+    font-size: 0.8rem;
+    font-family: "Cabin", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.Frappe {
+    background-color: #fde0c2;
+    border-radius: 10px;
+    padding: 10px; /* Add padding inside the columns */
+    margin: 10px;
+    display: inline-block; /* Ensure the columns are displayed inline */
+    border: solid 1px rgb(71, 58, 45);
+}
+
+.f-image {
+    max-width: 150px;
+    height: auto;
+    transition: all 0.2s ease; /* Smooth transition for hover effect */
+}
+
+.Frappe:hover .f-image {
+    border-radius: 50%; /* Create a circle */
+    background-color: #9A3B3B;
+    padding: 2px; /* Adjust the padding to ensure the circle surrounds the image */
+}
+
+
+.Frappe ul li{
+    font-size: 0.8rem;
+    font-family: "Cabin", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.nonCoffeeImg{
+    width: 150px;
+    height: auto;
+}
+
+.nonCoffeeName{
+    font-size: 1rem;
+    font-family: "Dosis", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.nonCoffeeColumn{
+    background-color: #f1d5f5;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    font-size: 0.8rem;
+}
+
+.burgerName{
+    font-family: "Dosis", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #f1d5f5;
+    font-weight: 600;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card-main {
+    height: 100%;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0;
+}
+
+.cardBurger{
+    background-color: #503C3C;
+    color: #fff;
+}
+
+.card-title{
+    color: #f1d5f5;
+}
+
+.card-main .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+.friesCard {
+    background-color: #503C3C;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+}
+.card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-family: "Dosis", sans-serif;
+    text-transform: uppercase;
+}
+.friesContainer ul {
+    list-style-type: none;
+    padding: 0;
+}
+.friesContainer ul li {
+    font-size: 0.8rem;
+    font-family: "Cabin", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.b-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+.BurgerCol {
+    padding: 0;
+}
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 1rem;
+}
+
+
+.card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.price {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 500;
+    font-family: "Cabin", sans-serif;
+}
+h5 {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.container.py-5 {
+    padding-top: 2rem !important;
+    padding-bottom: 1rem !important;
+}
+.row.g-4 > [class*='col-'] {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.crofColumn{
+    background-color: #987070;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    font-size: 0.8rem;
+}
+
+
+.footer-logo {
+    width: 50px;
+    height: auto;
+}
+
+footer{
+    background-color: #FEEBE1;
+    border-top: solid 1px black;
+    margin-top: 80px;
+}
+
+.list-unstyled{
+    color: black;
+    font-size: 0.8rem;
+    font-family: "Cabin", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+
+.carousel-control-prev .ion-icon,
+.carousel-control-next .ion-icon {
+    color: black; 
+    font-size: 2rem; 
+    padding: 10px;
+}
+
+.crofPrice{
+    font-size: 0.8rem;
+    font-family: "Cabin", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+#about{
+    font-size: 0.9rem;
+    font-family: "Cabin", sans-serif;
+    letter-spacing: 0.7px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.container.addOns {
+    background-image: url('images/logo/addonsbg.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.container.addOns h6 {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.container.addOns ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container.addOns li {
+    font-size: 0.9rem;
+    color: #555;
+    padding: 10px 0;
+}
+
+.container.addOns li:last-child {
+    border-bottom: none;
+}
+
+/* POP-UP Ad */
+.container .pop-up {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.content-box {
+    position: relative;
+    width: 90%; /* Change to a percentage for responsive width */
+    max-width: 350px;
+    background-color: #503C3C;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column; /* Ensure content is aligned vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    overflow: hidden;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1001;
+    background: transparent;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn:hover {
+    background: #be4b55;
+    color: #fff;
+}
+
+.imgpop {
+    width: 100%;
+    height: auto; /* Remove fixed height for better responsiveness */
+    background: #2e3825;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgpop img {
+    max-width: 100%; /* Change to 100% for better responsiveness */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0;
+}
+
+.content {
+    padding: 20px;
+}
+
+.pop-up h1 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-family: "Caveat Brush", cursive;
+}
+
+.pop-up h3 {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-family: "Dosis", sans-serif;
+}
+
+.pop-up p {
+    color: rgb(245, 232, 213);
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.popup-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Additional media query for smaller screens */
+@media (max-width: 600px) {
+    .content-box {
+        width: 50%; /* Ensure the pop-up takes most of the width but remains with padding */
+        max-width: none; /* Remove max-width restriction */
+        padding: 10px; /* Reduce padding to fit smaller screens */
+    }
+
+    .pop-up h1 {
+        font-size: 1.5rem; /* Adjust font-size for smaller screens */
+    }
+
+    .pop-up h3 {
+        font-size: 1rem; /* Adjust font-size for smaller screens */
+    }
+
+    .pop-up p {
+        font-size: 0.9rem; /* Adjust font-size for smaller screens */
+    }
+    
+}

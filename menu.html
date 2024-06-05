@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets\css\bootstrap.min.css">
+    <link rel="stylesheet" href="design.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+
+    <title>MENU4YOU</title>
+</head>
+<body>
+    <!-- HEADER START -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="images/logo/logo.png" alt="MENU4YOU Logo" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span><img src="assets\icon\menu.png" style="width: 25px; height: auto; border: none;"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#hot-coffee">Hot Coffee</a></li>
+                            <li><a class="dropdown-item" href="#iced-coffee">Iced Coffee</a></li>
+                            <li><a class="dropdown-item" href="#non-coffee">Non-Coffee</a></li>
+                            <li><a class="dropdown-item" href="#frappe">Frappe</a></li>
+                            <li><a class="dropdown-item" href="#milk-tea">Milk Tea</a></li>
+                            <li><a class="dropdown-item" href="#fries">French Fries</a></li>
+                            <li><a class="dropdown-item" href="#hamburgers">Hamburgers</a></li>
+                            <li><a class="dropdown-item" href="#croffles">Croffles</a></li>
+                        </ul>
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- HEADER END -->
+
+<!-- BANNER START -->
+<div id="home">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel"> <!-- Added data-bs-ride="carousel" -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/banner/banner1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/banner/banner2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/banner/banner3.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>  
+</div>
+
+<!-- BANNER END -->
+
+<!--MENU START -->
+<div class="container" id="products-container">
+    <h3 class="text-center title">Our Menu</h3>
+    <div class="container text-center">
+        <div class="row categories justify-content-center">
+            <div class="col d-flex flex-column align-items-center justify-content-center">
+                <a class="nav-link category active" aria-current="page" href="#coffee">
+                    <img src="images/icon/coffee.png" alt="Coffee" id="coffee">
+                    <span>Coffee</span>
+                </a>
+            </div>
+            <div class="col d-flex flex-column align-items-center justify-content-center">
+                <a class="nav-link category" href="#milk-tea">
+                    <img src="images/icon/bubble-tea.png" alt="Milktea" id="milktea">
+                    <span>Milktea</span>
+                </a>
+            </div>
+            <div class="col d-flex flex-column align-items-center justify-content-center">
+                <a class="nav-link category" href="#non-coffee">
+                    <img src="images\icon\frappe (3).png" alt="Non-coffee" id="noncoffee">
+                    <span>Non-coffee</span>
+                </a>
+            </div>
+            <div class="col d-flex flex-column align-items-center justify-content-center">
+                <a class="nav-link category" href="#fries">
+                    <img src="images/icon/burger.png" alt="Snacks" id="snacks">
+                    <span>Snacks</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+<!--HOT COFFEE START -->
+<div class="container" id="coffee">
+    <div class="" id="hot-coffee" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <h4 class="text-center title">Hot Coffee</h4>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col HotCoffee md-4 mb-3" data-aos="fade-up" data-aos-anchor-placement="center-center">
+                    <img src="images/hot-coffee/spanish latte.png" class="img-fluid p-image" alt="Spanish Latte">
+                    <h5 class="text-start name">Spanish Latte</h5>
+                    <ul class="sizes">
+                        <li>Small (12 oz.) - ₱70</li>
+                        <li>Medium (16 oz.) - ₱100</li>
+                        <li>Large (22 oz.) - ₱120</li>
+                    </ul>
+                </div>
+                <div class="col HotCoffee md-4 mb-3" data-aos="fade-up" data-aos-anchor-placement="center-center">
+                    <img src="images/hot-coffee/mocha-latte.png" class="img-fluid p-image" alt="Mocha Latte">
+                    <h5 class="text-start name">Mocha Latte</h5>
+                    <ul class="sizes">
+                        <li>Small (12 oz.) - ₱70</li>
+                        <li>Medium (16 oz.) - ₱100</li>
+                        <li>Large (22 oz.) - ₱120</li>
+                    </ul>
+                </div>
+                <div class="col HotCoffee md-4 mb-3" data-aos="fade-up" data-aos-anchor-placement="center-center">
+                    <img src="images/hot-coffee/espresso.png" class="img-fluid p-image" alt="Espresso">
+                    <h5 class="text-start name">Espresso</h5>
+                    <ul class="sizes">
+                        <li>Small (12 oz.) - ₱70</li>
+                        <li>Medium (16 oz.) - ₱100</li>
+                        <li>Large (22 oz.) - ₱120</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row collapse" id="collapseRow">
+                <div class="col HotCoffee md-4 mb-3" data-aos="fade-up" data-aos-anchor-placement="center-center">
+                    <img src="images/hot-coffee/cappuccino.png" class="img-fluid p-image" alt="Cappuccino">
+                    <h5 class="text-start name">Cappuccino</h5>
+                    <ul class="sizes">
+                        <li>Small (12 oz.) - ₱70</li>
+                        <li>Medium (16 oz.) - ₱100</li>
+                        <li>Large (22 oz.) - ₱120</li>
+                    </ul>
+                </div>
+                <div class="col HotCoffee md-4 mb-3" data-aos="fade-up" data-aos-anchor-placement="center-center">
+                    <img src="images/hot-coffee/hot-chocolate.png" class="img-fluid p-image" alt="Hot Chocolate">
+                    <h5 class="text-start name">Hot Chocolate</h5>
+                    <ul class="sizes">
+                        <li>Small (12 oz.) - ₱70</li>
+                        <li>Medium (16 oz.) - ₱100</li>
+                        <li>Large (22 oz.) - ₱120</li>
+                    </ul>
+                </div>
+                <div class="col HotCoffee md-4 mb-3" data-aos="fade-up" data-aos-anchor-placement="center-center">
+                    <img src="images/hot-coffee/americano.png" class="img-fluid p-image" alt="Americano">
+                    <h5 class="text-start name">Americano</h5>
+                    <ul class="sizes">
+                        <li>Small (12 oz.) - ₱70</li>
+                        <li>Medium (16 oz.) - ₱100</li>
+                        <li>Large (22 oz.) - ₱120</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center control">
+                <button class="btn btn-primary show-more" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRow" aria-expanded="false" aria-controls="collapseRow">
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </button>
+                <button class="btn btn-primary show-less d-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRow" aria-expanded="false" aria-controls="collapseRow">
+                    <ion-icon name="chevron-up-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--HOT COFFEE END -->
+
+<!-- ICED COFFEE START-->
+<div class="container" id="iced-coffee">
+    <h4 class="text-center title">Iced Coffee</h4>
+    <div id="iceCoffeeCarousel" class="carousel slide justify-content-center" data-bs-ride="carousel">
+        <div class="carousel-inner row w-100 mx-auto">
+            
+            <div class="carousel-item active IcedCoffee">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-3 col-md-4 col-sm-6 icedCoffeeColumn d-flex flex-column align-items-center">
+                        <div class="icedCoffeeImg">
+                            <img src="images/ice-coffee/caramel-macchiato.png" class="d-block" alt="Caramel Macchiato" style="max-width: 100%;">
+                        </div>
+                        <h5 class="mt-3 icedCoffeeName">Caramel Macchiato</h5>
+                        <ul class="sizes list-unstyled">
+                            <li>Small (12 oz.) - ₱70</li>
+                            <li>Medium (16 oz.) - ₱100</li>
+                            <li>Large (22 oz.) - ₱120</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 icedCoffeeColumn d-flex flex-column align-items-center">
+                        <div class="icedCoffeeImg">
+                            <img src="images/ice-coffee/spanish-latte.png" class="d-block" alt="Spanish Latte" style="max-width: 100%;">
+                        </div>
+                        <h5 class="mt-3 icedCoffeeName">Spanish Latte</h5>
+                        <ul class="sizes list-unstyled">
+                            <li>Small (12 oz.) - ₱70</li>
+                            <li>Medium (16 oz.) - ₱100</li>
+                            <li>Large (22 oz.) - ₱120</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 icedCoffeeColumn d-flex flex-column align-items-center">
+                        <div class="icedCoffeeImg">
+                            <img src="images/ice-coffee/hazelnut-latte.png" class="d-block" alt="Hazelnut Latte" style="max-width: 100%;">
+                        </div>
+                        <h5 class="mt-3 icedCoffeeName">Hazelnut Latte</h5>
+                        <ul class="sizes list-unstyled">
+                            <li>Small (12 oz.) - ₱70</li>
+                            <li>Medium (16 oz.) - ₱100</li>
+                            <li>Large (22 oz.) - ₱120</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item IcedCoffee">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-3 col-md-4 col-sm-6 icedCoffeeColumn d-flex flex-column align-items-center">
+                        <div class="icedCoffeeImg">
+                            <img src="images/ice-coffee/salted-caramel.png" class="d-block" alt="Salted Caramel" style="max-width: 100%;">
+                        </div>
+                        <h5 class="mt-3 icedCoffeeName">Salted Caramel</h5>
+                        <ul class="sizes list-unstyled">
+                            <li>Small (12 oz.) - ₱70</li>
+                            <li>Medium (16 oz.) - ₱100</li>
+                            <li>Large (22 oz.) - ₱120</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 icedCoffeeColumn d-flex flex-column align-items-center">
+                        <div class="icedCoffeeImg">
+                            <img src="images/ice-coffee/strawberry-latte.png" class="d-block" alt="Strawberry Latte" style="max-width: 100%;">
+                        </div>
+                        <h5 class="mt-3 icedCoffeeName">Strawberry Latte</h5>
+                        <ul class="sizes list-unstyled">
+                            <li>Small (12 oz.) - ₱70</li>
+                            <li>Medium (16 oz.) - ₱100</li>
+                            <li>Large (22 oz.) - ₱120</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 icedCoffeeColumn d-flex flex-column align-items-center">
+                        <div class="icedCoffeeImg">
+                            <img src="images/ice-coffee/white-mocha.png" class="d-block" alt="White Mocha Latte" style="max-width: 100%;">
+                        </div>
+                        <h5 class="mt-3 icedCoffeeName">White Mocha Latte</h5>
+                        <ul class="sizes list-unstyled">
+                            <li>Small (12 oz.) - ₱70</li>
+                            <li>Medium (16 oz.) - ₱100</li>
+                            <li>Large (22 oz.) - ₱120</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <button class="carousel-control-prev" type="button" data-bs-target="#iceCoffeeCarousel" data-bs-slide="prev">
+            <span class="ion-icon">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#iceCoffeeCarousel" data-bs-slide="next">
+            <span class="ion-icon">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        
+    </div>
+</div> <!-- ICED COFFEE END -->
+
+<!-- MILKTEA START -->
+<div class="container" id="milk-tea">
+    <h4 class="text-center title">Milk Tea</h4>
+    <div class="container text-center">
+        <div class="row">
+          <div class="col MilkTea md-4 mb-3" data-aos="fade-right">
+            <img src="images\milk-tea\brown-sugar.png" class="img-fluid p-image" alt="Brown Sugar">
+            <h5 class="text-start name">Brown Sugar</h5>
+                <ul class="sizes">
+                    <li>Small (12 oz.) - ₱70</li>
+                    <li>Medium (16 oz.) - ₱100</li>
+                    <li>Large (22 oz.) - ₱120</li>
+                </ul>
+          </div>
+          <div class="col MilkTea md-4 mb-3" data-aos="fade-right">
+            <img src="images\milk-tea\classic.png" class="img-fluid p-image" alt="Classic">
+            <h5 class="text-start name">Classic</h5>
+                <ul class="sizes">
+                    <li>Small (12 oz.) - ₱70</li>
+                    <li>Medium (16 oz.) - ₱100</li>
+                    <li>Large (22 oz.) - ₱120</li>
+                </ul>
+          </div>
+          <div class="col MilkTea md-4 mb-3" data-aos="fade-right">
+            <img src="images\milk-tea\honeydew.png" class="img-fluid p-image" alt="Honeydew">
+            <h5 class="text-start name">Honeydew</h5>
+                <ul class="sizes">
+                    <li>Small (12 oz.) - ₱70</li>
+                    <li>Medium (16 oz.) - ₱100</li>
+                    <li>Large (22 oz.) - ₱120</li>
+                </ul>
+          </div>
+        </div>
+        <div class="row collapse" id="collapseRow">
+            <div class="col MilkTea md-4 mb-3" data-aos="fade-right">
+                <img src="images\milk-tea\matcha.png" class="img-fluid p-image" alt="Matcha">
+                <h5 class="text-start name">Matcha</h5>
+                    <ul class="sizes">
+                        <li>Small (12 oz.) - ₱70</li>
+                        <li>Medium (16 oz.) - ₱100</li>
+                        <li>Large (22 oz.) - ₱120</li>
+                    </ul>
+            </div>
+
+            <div class="col MilkTea md-4 mb-3" data-aos="fade-right">
+                <img src="images\milk-tea\taro.png" class="img-fluid p-image" alt="HTaro">
+                <h5 class="text-start name">Taro</h5>
+                    <ul class="sizes">
+                        <li>Small (12 oz.) - ₱70</li>
+                        <li>Medium (16 oz.) - ₱100</li>
+                        <li>Large (22 oz.) - ₱120</li>
+                    </ul>
+            </div>
+
+            <div class="col MilkTea md-4 mb-3" data-aos="fade-right">
+                <img src="images\milk-tea\thai.png" class="img-fluid p-image" alt="Thai">
+                <h5 class="text-start name">Thai</h5>
+                    <ul class="sizes">
+                        <li>Small (12 oz.) - ₱70</li>
+                        <li>Medium (16 oz.) - ₱100</li>
+                        <li>Large (22 oz.) - ₱120</li>
+                    </ul>
+            </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col text-center control">
+            <button class="btn btn-primary show-more" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRow" aria-expanded="false" aria-controls="collapseRow">
+                <ion-icon name="chevron-down-outline"></ion-icon>
+            </button>
+            <button class="btn btn-primary show-less d-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRow" aria-expanded="false" aria-controls="collapseRow">
+                <ion-icon name="chevron-up-outline"></ion-icon>
+            </button>
+        </div>
+    </div>
+</div><!-- MILKTEA END -->
+
+<div class="container custom-container">
+    <div class="ratio ratio-21x9 video-border">
+        <video autoplay loop muted class="video-border">
+            <source src="images/banner/ads.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+<!-- NON-COFFEE START-->
+<div class="container non-coffee" id="non-coffee">
+<h4 class="text-center title">Non-coffee</h4>
+<div id="nonCoffeeCarousel" class="carousel slide justify-content-center" data-bs-ride="carousel">
+    <div class="carousel-inner row w-100 mx-auto">
+        
+        <div class="carousel-item active NonCoffee">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-3 col-md-4 col-sm-6 nonCoffeeColumn d-flex flex-column align-items-center">
+                    <div class="nonCoffeeImg">
+                        <img src="images\non-coffee\avocado-milkshake.png" class="d-block" alt="AvocadoMilkshake" style="max-width: 100%;">
+                    </div>
+                    <h5 class="mt-3 nonCoffeeName">Avocado Milkshake</h5>
+                    <ul class="sizes list-unstyled">
+                        <li>Small (12 oz.) - ₱70</li>
+                        <li>Medium (16 oz.) - ₱100</li>
+                        <li>Large (22 oz.) - ₱120</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 nonCoffeeColumn d-flex flex-column align-items-center">
+                    <div class="nonCoffeeImg">
+                        <img src="images\non-coffee\choco-float.png" class="d-block" alt="Choco-Float" style="max-width: 100%;">
+                    </div>
+                    <h5 class="mt-3 nonCoffeeName">Choco Float</h5>
+                    <ul class="sizes list-unstyled">
+                        <li>Small (12 oz.) - ₱70</li>
+                        <li>Medium (16 oz.) - ₱100</li>
+                        <li>Large (22 oz.) - ₱120</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 nonCoffeeColumn d-flex flex-column align-items-center">
+                    <div class="nonCoffeeImg">
+                        <img src="images\non-coffee\coke-float.png" class="d-block" alt="Coke-Float" style="max-width: 100%;">
+                    </div>
+                    <h5 class="mt-3 nonCoffeeName">Coke Float</h5>
+                    <ul class="sizes list-unstyled">
+                        <li>Small (12 oz.) - ₱70</li>
+                        <li>Medium (16 oz.) - ₱100</li>
+                        <li>Large (22 oz.) - ₱120</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item NonCoffee">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-3 col-md-4 col-sm-6 nonCoffeeColumn d-flex flex-column align-items-center">
+                    <div class="nonCoffeeImg">
+                        <img src="images\non-coffee\milky-matcha.png" class="d-block" alt="Milky-Matcha" style="max-width: 100%;">
+                    </div>
+                    <h5 class="mt-3 nonCoffeeName">Milky Matcha</h5>
+                    <ul class="sizes list-unstyled">
+                        <li>Small (12 oz.) - ₱70</li>
+                        <li>Medium (16 oz.) - ₱100</li>
+                        <li>Large (22 oz.) - ₱120</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 nonCoffeeColumn d-flex flex-column align-items-center">
+                    <div class="nonCoffeeImg">
+                        <img src="images\non-coffee\milky-strawberry.png" class="d-block" alt="Milky-Strawberry" style="max-width: 100%;">
+                    </div>
+                    <h5 class="mt-3 nonCoffeeName">Milky Strawberry</h5>
+                    <ul class="sizes list-unstyled">
+                        <li>Small (12 oz.) - ₱70</li>
+                        <li>Medium (16 oz.) - ₱100</li>
+                        <li>Large (22 oz.) - ₱120</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 nonCoffeeColumn d-flex flex-column align-items-center">
+                    <div class="nonCoffeeImg">
+                        <img src="images\non-coffee\strawberry-matcha.png" class="d-block" alt="Straberry-Matcha" style="max-width: 100%;">
+                    </div>
+                    <h5 class="mt-3 nonCoffeeName">Strawberry-Matcha</h5>
+                    <ul class="sizes list-unstyled">
+                        <li>Small (12 oz.) - ₱70</li>
+                        <li>Medium (16 oz.) - ₱100</li>
+                        <li>Large (22 oz.) - ₱120</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#nonCoffeeCarousel" data-bs-slide="prev">
+            <span class="ion-icon">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#nonCoffeeCarousel" data-bs-slide="next">
+            <span class="ion-icon">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </span>
+            <span class="visually-hidden">Next</span>
+        </button>
+</div>
+</div><!-- NON-COFFEE END -->
+
+<div class="container" id="frappe">
+    <h4 class="text-center title">Frappe</h4>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col Frappe md-4 mb-3" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                <img src="images/frappe/caramel.png" class="img-fluid f-image" alt="Caramel">
+                <h5 class="text-start name">Caramel</h5>
+                <ul class="sizes">
+                    <li>Small (12 oz.) - ₱70</li>
+                    <li>Medium (16 oz.) - ₱100</li>
+                    <li>Large (22 oz.) - ₱120</li>
+                </ul>
+            </div>
+            <div class="col Frappe md-4 mb-3" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                <img src="images/frappe/choco-mousse.png" class="img-fluid f-image" alt="Choco Mousse">
+                <h5 class="text-start name">Choco Mousse</h5>
+                <ul class="sizes">
+                    <li>Small (12 oz.) - ₱70</li>
+                    <li>Medium (16 oz.) - ₱100</li>
+                    <li>Large (22 oz.) - ₱120</li>
+                </ul>
+            </div>
+            <div class="col Frappe md-4 mb-3" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                <img src="images/frappe/cookiesncream.png" class="img-fluid f-image" alt="Cookies And Cream">
+                <h5 class="text-start name">Cookies And Cream</h5>
+                <ul class="sizes">
+                    <li>Small (12 oz.) - ₱70</li>
+                    <li>Medium (16 oz.) - ₱100</li>
+                    <li>Large (22 oz.) - ₱120</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col Frappe md-4 mb-3" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                <img src="images/frappe/java-chip.png" class="img-fluid f-image" alt="Java Chip">
+                <h5 class="text-start name">Java Chip</h5>
+                <ul class="sizes">
+                    <li>Small (12 oz.) - ₱70</li>
+                    <li>Medium (16 oz.) - ₱100</li>
+                    <li>Large (22 oz.) - ₱120</li>
+                </ul>
+            </div>
+            <div class="col Frappe md-4 mb-3" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                <img src="images/frappe/strawberry.png" class="img-fluid f-image" alt="Strawberry">
+                <h5 class="text-start name">Strawberry</h5>
+                <ul class="sizes">
+                    <li>Small (12 oz.) - ₱70</li>
+                    <li>Medium (16 oz.) - ₱100</li>
+                    <li>Large (22 oz.) - ₱120</li>
+                </ul>
+            </div>
+            <div class="col Frappe md-4 mb-3" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                <img src="images/frappe/vanilla-matcha.png" class="img-fluid f-image" alt="Vanilla Matcha">
+                <h5 class="text-start name">Vanilla Matcha</h5>
+                <ul class="sizes">
+                    <li>Small (12 oz.) - ₱70</li>
+                    <li>Medium (16 oz.) - ₱100</li>
+                    <li>Large (22 oz.) - ₱120</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div><!--FRAPPE END -->
+
+
+<div class="container" id="snacks">
+<!-- FRIES START -->
+<div class="container py-5 friesContainer" id="fries">
+    <h4 class="text-center title">French Fries</h4>
+    <div class="row g-4">
+        <div class="col-lg-6" data-aos="fade-left">
+            <div class="row g-4">
+                <div class="col-12" data-aos="fade-left">
+                    <div class="card card-main">
+                        <img src="images/french-fries/cheese.png" class="card-img-top" alt="Cheese">
+                        <div class="card-body friesCard">
+                            <h5 class="card-title">Cheese</h5>
+                            <ul class="sizes">
+                                <li>Small: ₱80</li>
+                                <li>Medium: ₱100</li>
+                                <li>Large: ₱120</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12" data-aos="fade-left">
+                    <div class="card card-main">
+                        <img src="images/french-fries/sweetcorn.png" class="card-img-top" alt="Sweet Corn">
+                        <div class="card-body friesCard">
+                            <h5 class="card-title">Sweet Corn</h5>
+                            <ul class="sizes">
+                                <li>Small: ₱80</li>
+                                <li>Medium: ₱100</li>
+                                <li>Large: ₱120</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+            <div class="row g-4">
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="card card-main">
+                        <img src="images/french-fries/bbq.png" class="card-img-top" alt="BBQ">
+                        <div class="card-body friesCard">
+                            <h5 class="card-title">BARBEQUE</h5>
+                            <ul class="sizes">
+                                <li>Small: ₱80</li>
+                                <li>Medium: ₱100</li>
+                                <li>Large: ₱120</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="card card-main">
+                        <img src="images/french-fries/sour.png" class="card-img-top" alt="Sour and Cream">
+                        <div class="card-body friesCard">
+                            <h5 class="card-title">Sour and Cream</h5>
+                            <ul class="sizes">
+                                <li>Small: ₱80</li>
+                                <li>Medium: ₱100</li>
+                                <li>Large: ₱120</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="card card-main">
+                        <img src="images/french-fries/classic.png" class="card-img-top" alt="Classic Salted">
+                        <div class="card-body friesCard">
+                            <h5 class="card-title">Classic Salted</h5>
+                            <ul class="sizes">
+                                <li>Small: ₱80</li>
+                                <li>Medium: ₱100</li>
+                                <li>Large: ₱120</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="card card-main">
+                        <img src="images/french-fries/chili.png" class="card-img-top" alt="Chili Cheese">
+                        <div class="card-body friesCard">
+                            <h5 class="card-title">Chili Cheese</h5>
+                            <ul class="sizes">
+                                <li>Small: ₱80</li>
+                                <li>Medium: ₱100</li>
+                                <li>Large: ₱120</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FRIES END -->
+
+
+<!-- HAMBURGERS START -->
+<div class="container py-5" id="hamburgers">
+    <div class="" id="burgers">
+        <h4 class="text-center title">Hamburgers</h4>
+        <div class="row g-4">
+            <div class="col-md-6 mb-2 BurgerCol">
+                <div class="card">
+                    <img src="images/hamburgers/classic.png" class="img-fluid b-image" alt="Classic Beef Burger">
+                    <div class="card-body cardBurger">
+                        <h5 class="burgerName">Classic Beef</h5>
+                        <p class="price">₱150</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-2 BurgerCol">
+                <div class="card">
+                    <img src="images/hamburgers/spicy.png" class="img-fluid b-image" alt="Spicy Jalapeño Burger">
+                    <div class="card-body cardBurger">
+                        <h5 class="burgerName">Spicy Jalapeño</h5>
+                        <p class="price">₱160</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-2 BurgerCol">
+                <div class="card">
+                    <img src="images/hamburgers/avocado.png" class="img-fluid b-image" alt="Avocado Turkey Burger">
+                    <div class="card-body cardBurger">
+                        <h5 class="burgerName">Avocado Turkey</h5>
+                        <p class="price">₱165</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-3 mb-3 BurgerCol">
+                <div class="card">
+                    <img src="images/hamburgers/mushroom.png" class="img-fluid b-image" alt="Mushroom Swiss Burger">
+                    <div class="card-body cardBurger">
+                        <h5 class="burgerName">Mushroom Swiss</h5>
+                        <p class="price">₱170</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3 BurgerCol">
+                <div class="card">
+                    <img src="images/hamburgers/bbq.png" class="img-fluid b-image" alt="BBQ Ranch Burger">
+                    <div class="card-body cardBurger">
+                        <h5 class="burgerName">Barbeque Ranch</h5>
+                        <p class="price">₱175</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3 BurgerCol">
+                <div class="card">
+                    <img src="images/hamburgers/bacon.png" class="img-fluid b-image" alt="Bacon Cheeseburger">
+                    <div class="card-body cardBurger">
+                        <h5 class="burgerName">Bacon Cheeseburger</h5>
+                        <p class="price">₱180</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- HAMBURGERS END -->
+
+<div class="container" id="croffles">
+    
+    <h4 class="text-center title">Croffles</h4>
+    <div class="row justify-content-center text-center">
+        <div class="col-lg-3 col-md-4 col-sm-6 crofColumn d-flex flex-column align-items-center" data-aos="flip-right">
+            <div class="nonCoffeeImg">
+                <img src="images/croffles/plain.png" class="d-block" alt="Plain Croffle" style="max-width: 100%; border-radius: 50%;">
+            </div>
+            <h5 class="mt-3 nonCoffeeName">Plain Croffle</h5>
+            <p class="crofPrice">₱80</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 crofColumn d-flex flex-column align-items-center" data-aos="flip-right">
+            <div class="nonCoffeeImg">
+                <img src="images\croffles\stawberry.png" class="d-block" alt="Creamy Strawberry" style="max-width: 100%; border-radius: 50%;">
+            </div>
+            <h5 class="mt-3 nonCoffeeName">Creamy Strawberry</h5>
+            <p class="crofPrice">₱90</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 crofColumn d-flex flex-column align-items-center" data-aos="flip-right">
+            <div class="nonCoffeeImg">
+                <img src="images/croffles/nutella.png" class="d-block" alt="Nutella" style="max-width: 100%; border-radius: 50%;">
+            </div>
+            <h5 class="mt-3 nonCoffeeName">Nutella</h5>
+            <p class="crofPrice">₱100</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 crofColumn d-flex flex-column align-items-center" data-aos="flip-right">
+            <div class="nonCoffeeImg">
+                <img src="images/croffles/almond.png" class="d-block" alt="Nutella Almond" style="max-width: 100%; border-radius: 50%;">
+            </div>
+            <h5 class="mt-3 nonCoffeeName">Nutella Almond</h5>
+            <p class="crofPrice">₱120</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 crofColumn d-flex flex-column align-items-center" data-aos="flip-right">
+            <div class="nonCoffeeImg">
+                <img src="images/croffles/matcha.png" class="d-block" alt="Creamy Matcha" style="max-width: 100%; border-radius: 50%;">
+            </div>
+            <h5 class="mt-3 nonCoffeeName">Creamy Matcha</h5>
+            <p class="crofPrice">₱100</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 crofColumn d-flex flex-column align-items-center" data-aos="flip-right">
+            <div class="nonCoffeeImg">
+                <img src="images/croffles/oreo.png" class="d-block" alt="Oreo" style="max-width: 100%; border-radius: 50%;">
+            </div>
+            <h5 class="mt-3 nonCoffeeName">Oreo</h5>
+            <p class="crofPrice">₱110</p>
+        </div>
+    </div>
+</div>
+
+<div class="container addOns">
+    <h6>Add Ons</h6>
+    <ul class="list-unstyled">
+        <li>Sugar: ₱10</li>
+        <li>Sauce: ₱20</li>
+        <li>Milk: ₱20</li>
+        <li>Espresso Shot: ₱30</li>
+        <li>Almond Milk: ₱30</li>
+        <li>Ice Cream: ₱40</li>
+    </ul>
+</div>
+
+</div>
+
+    <!-- POP-UP ADS! -->
+    <div class="container"></div>
+    <div class="pop-up justify-content-center" id="popup-ad">
+        <div class="content-box justify-content-center">
+            <div class="close-btn">&times;</div>
+            <div class="imgpop">
+                <img class="img-fluid" src="images\logo\popup (2).png" alt="Advertisement Image">
+            </div>
+            <div class="content">
+                <h1>STUDENT DISCOUNT!</h1>
+                <h3>Show your student ID and enjoy 20% off on any coffee or milk tea of your choice.</h3>
+                <p><small>Don't miss out! Promo is until <strong>June 15, 2024</strong> only.</small></p>
+            </div>
+        </div>
+    </div>
+
+
+</div><!--MENU END -->
+
+
+<!-- Footer -->
+<footer class="pt-4">
+    <div class="container footer">
+        <div class="row">
+            <!-- First Column (bigger) -->
+            <div id="about" class="col-md-5 mb-4">
+                <h5>About Us</h5>
+                <p>Welcome to MENU4YOU! Enjoy our delicious hamburgers, coffee, croffles, milk teas, and more in a cozy ambiance. Flavorful moments await,
+                    where every sip and bite is a delight!</p>
+
+                    <h5 style="font-family: Cabin, sans-serif;">Meet The Team</h5>
+                    <ul class="list-unstyled">
+                        <li>Talingting, Eloisa Jane G. </li>
+                        <li>Yleana, Nicole N.</li>
+                        <li>Reyes, Ricxon T.</li>
+                        <li>Salipot, Cyril James G.</li>
+                        <li>BSIT 3B</li>
+                    </ul>
+                
+            </div>
+            <!-- Second Column -->
+            <div id="menu" class="col-md-3 mb-4 ml-md-5">
+                <h5 style="font-family: Cabin, sans-serif; letter-spacing: 1px;">Menu</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#coffee" class="text-black">Coffee</a></li>
+                    <li><a href="#milk-tea" class="text-black">Milk Tea</a></li>
+                    <li><a href="#non-coffee" class="text-black">Non-coffee</a></li>
+                    <li><a href="#fries" class="text-black">Snacks</a></li>
+                </ul>
+            </div>
+            <!-- Third Column -->
+            <div id="contact" class="col-md-4 mb-4">
+                <h5 style="font-family: Cabin, sans-serif; letter-spacing: 1px;">Contact</h5>
+                <ul class="list-unstyled contact text-black">
+                    <li>Email: <a href="mailto:menu4youofficial@gmail.com">menu4youofficial@gmail.com</a></li>
+                    <li>Phone: +123 456 7890</li>
+                    <li>Address: Biga I, Silang, Cavite</a></li>
+                </ul>
+                <div class="d-flex align-items-center mt-5" style="font-size: 0.9rem;">
+                    <img src="images\logo\menu4you main transp.png" alt="MENU4YOU Logo" class="footer-logo">
+                    <p class="mb-0" style="font-family: Cabin, sans-serif; font-weight: 500;">© 2024 MENU4YOU. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+    
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script>
+    function showPopup() {
+        document.getElementById('popup-ad').style.display = 'flex';
+    }
+
+    function hidePopup() {
+        document.getElementById('popup-ad').style.display = 'none';
+    }
+
+    function showBanner() {
+        document.getElementById('banner-ad').style.display = 'flex';
+    }
+
+    function hideBanner() {
+        document.getElementById('banner-ad').style.display = 'none';
+        setTimeout(showBanner, 30000);  // 30 seconds!!
+    }
+
+    document.querySelector('.close-btn').addEventListener('click', hidePopup);
+    document.querySelector('.close-banner-btn').addEventListener('click', hideBanner);
+
+    setInterval(showPopup, 1 * 60 * 1000);
+    showPopup();
+
+    setInterval(showBanner, 1 * 60 * 1000);
+    showBanner();
+</script>
+<script>
+    // JavaScript to toggle buttons
+    document.querySelector('.show-more').addEventListener('click', function() {
+        document.querySelector('.show-more').classList.add('d-none');
+        document.querySelector('.show-less').classList.remove('d-none');
+    });
+
+    document.querySelector('.show-less').addEventListener('click', function() {
+        document.querySelector('.show-less').classList.add('d-none');
+        document.querySelector('.show-more').classList.remove('d-none');
+    });
+
+</script> 
+
+<script>
+    AOS.init({
+      duration: 500, // duration of the animation in milliseconds
+      easing: 'ease-in-out', // easing function for the animation
+      once: false // whether the animation should happen only once - while scrolling down
+    });
+  </script>
+
+<script>
+    function showPopup() {
+        document.getElementById('popup-ad').style.display = 'flex';
+    }
+
+    function hidePopup() {
+        document.getElementById('popup-ad').style.display = 'none';
+    }
+
+    // Remove the showBanner and hideBanner functions, as well as the setInterval calls for them
+    document.querySelector('.close-btn').addEventListener('click', hidePopup);
+    setInterval(showPopup, 1 * 60 * 1000);
+    showPopup();
+</script>
+
+</body>
+</html>
